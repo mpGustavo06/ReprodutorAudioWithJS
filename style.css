@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+:root{
+    --dark : #090d25;
+    --cyan : #00fff0;
+    --cyan-2 : #00fff070;
+    --redpink : #ff005c;
+    --redpink-2 : #ff005c70;
+    --green : #21C739;
+    --green-2 : #21CE39;
+    --yellow : #F0D72C;
+    --yellow-2 : #F0E73F;
+}
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btn{
+    position: relative;
+    padding: 0.05rem 0.01rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border-width: 0.3rem;
+    border-style: solid;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.btn,
+.btn::before,
+.btn::after{
+    transition: filter,box-shadow,color,background-color 200ms ease-in-out;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: -4.5rem;
+    transform: perspective(5rem) rotateX(50deg) scaleY(0.7);
+    filter: blur(2rem);
+}
+
+.btn-1{
+    color: var(--yellow);
+    border-color: var(--yellow);
+    text-shadow: 0 0 0.5rem var(--yellow);
+}
+
+.btn-1:hover{
+    color: var(--dark);
+    background-color: var(--yellow);
+    box-shadow: 0 0 1rem var(--yellow);
+}
+
+.btn-2{
+    color: var(--redpink);
+    border-color: var(--redpink);
+    text-shadow: 0 0 0.5rem var(--redpink);
+}
+
+.btn-2:hover{
+    color: var(--dark);
+    background-color: var(--redpink);
+    box-shadow: 0 0 1rem var(--redpink);
+}
+
+.btn-3{
+    color: var(--green);
+    border-color: var(--green);
+    text-shadow: 0 0 0.5rem var(--green);
+}
+
+.btn-3:hover{
+    color: var(--dark);
+    background-color: var(--green);
+    box-shadow: 0 0 1rem var(--green);
+}
+
+.btn-4{
+    color: var(--cyan);
+    border-color: var(--cyan);
+    text-shadow: 0 0 0.5rem var(--cyan);
+}
+
+.btn-4:hover{
+    color: var(--dark);
+    background-color: var(--cyan);
+    box-shadow: 0 0 1rem var(--cyan);
+}
+
+
+.agua {
+    width: 100%;
+    height: 100%;
+}
+
+.comida {
+    width: 100%;
+    height: 100%;
+}
+
+.dodoi {
+    width: 100%;
+    height: 100%;
+}
+
+.vazo {
+    width: 100%;
+    height: 100%;
+}

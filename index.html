@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Button - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script>
+        function playS() {
+            const button = document.getElementById("bsede")
+            button.addEventListener('click', function(){
+                let x = document.getElementById("sede");
+                x.play()
+            })
+        }
+        function playF() {
+            const button = document.getElementById("bfome")
+            button.addEventListener('click', function(){
+                let x = document.getElementById("fome");
+                x.play()
+            })
+        }
+        function playD() {
+            const button = document.getElementById("bdodoi")
+            button.addEventListener('click', function(){
+                let x = document.getElementById("dodoi");
+                x.play()
+            })
+        }
+        function playV() {
+            const button = document.getElementById("bvazo")
+            button.addEventListener('click', function(){
+                let x = document.getElementById("vazo");
+                x.play()
+            })
+        }
+    </script>
+<body>
+    
+    <div class="container">
+        <audio id="sede" src="audio/sede.mp3"></audio>
+        <button id="bsede" onclick="playS()" class="btn btn-1">
+            <img class="agua" src="img/agua.png">
+        </button>
+
+        <audio id="fome" src="audio/fome.mp3"></audio>
+        <button id="bfome" onclick="playF()" class="btn btn-2">
+            <img class="comida" src="img/comida.png">
+        </button>
+
+        <audio id="dodoi" src="audio/dodoi.mp3"></audio>
+        <button id="bdodoi" onclick="playD()" class="btn btn-3">
+            <img class="dodoi" src="img/dodoi.png">
+        </button>
+
+        <audio id="vazo" src="audio/banheiro.mp3"></audio>
+        <button id="bvazo" onclick="playV()" class="btn btn-4">
+            <img class="vazo" src="img/vazo.png">
+        </button>
+    </div>
+
+</body>
+</html>
